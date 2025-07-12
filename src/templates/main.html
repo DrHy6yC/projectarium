@@ -6,7 +6,7 @@
 
 {% block head %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<link rel="stylesheet" href="{{ base_path }}/static/css/custom.css">
+
 {% endblock %}
 
 {% block body %}
@@ -206,35 +206,38 @@
 </section>
 
 <!-- Three -->
-<section id="three" class="main style4 special">
+<section id="three" class="main style2 special">
     <div class="container">
         <header class="major">
             <h2>Мои проекты</h2>
         </header>
-        <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+        <p>В этом разделе представлены мои разработки с подробным описанием функционала, ссылками на рабочие демо и репозитории, а также текущие проекты, находящиеся в процессе реализации.</p>
         <div class="row gtr-150">
             <div class="col-4 col-12-medium">
                 <span class="image fit"><img src="{{ base_path }}/static/images/pic02.jpg" alt="" /></span>
-                <h3>Magna feugiat lorem</h3>
-                <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">More</a></li>
+                <h3>FastAPI GIS</h3>
+                <p>Это серверное API для хранения и обработки геопространственных данных с использованием FastAPI, PostgreSQL и расширения PostGIS. Проект интегрируется с QGIS через специализированный плагин.</p>
+                <ul class="">
+                    <li><a href="https://github.com/DrHy6yC/fastapi_gis" class="button">Репозиторий</a></li>
+                    <li><a href="https://github.com/DrHy6yC/fastapi_gis" class="button">Репозиторий</a></li>
                 </ul>
             </div>
             <div class="col-4 col-12-medium">
                 <span class="image fit"><img src="{{ base_path }}/static/images/pic03.jpg" alt="" /></span>
-                <h3>Magna feugiat lorem</h3>
-                <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">More</a></li>
+                <h3>Проект по курсу FastApi</h3>
+                <p>API для бронирования отелей с функционалом регистрации пользователей. В проекте применены архитектурные паттерны Repository и DataMapper. Используется Docker для контейнеризации и PostgreSQL в качестве системы управления базами данных.</p>
+                <ul class="">
+                    <li><a href="https://github.com/DrHy6yC/course_booking_hotel" class="button">Репозиторий</a></li>
+                    <li><a href="https://github.com/DrHy6yC/course_booking_hotel" class="button">Репозиторий</a></li>
                 </ul>
             </div>
             <div class="col-4 col-12-medium">
                 <span class="image fit"><img src="{{ base_path }}/static/images/pic04.jpg" alt="" /></span>
-                <h3>Magna feugiat lorem</h3>
-                <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">More</a></li>
+                <h3>Телеграм-бот-воронка</h3>
+                <p>Простой бот с интерактивной кнопкой и базовым сценарием. Его задача — закрепить кнопку «Скачать гайд» в телеграм-канале. При нажатии на кнопку бот отправляет пользователю в личные сообщения опрос с выбором возраста и целей обучения. После завершения опроса пользователь получает ссылку на скачивание гайда.</p>
+                <ul class="">
+                    <li><a href="https://github.com/DrHy6yC/bot_lite" class="button">Репозиторий</a></li>
+                    <li><a href="https://github.com/DrHy6yC/bot_lite" class="button">Репозиторий</a></li>
                 </ul>
             </div>
         </div>
