@@ -12,7 +12,7 @@ services:
       - .env
     restart: unless-stopped
     networks:
-      - network_app
+      - network_app_main
 
   nginx_main:
     image: nginx:1.29-alpine
@@ -22,9 +22,9 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf  # Конфиг Nginx
     networks:
-      - network_app
+      - network_app_main
 
 
 networks:
-  network_app:
+  network_app_main:
     driver: bridge
