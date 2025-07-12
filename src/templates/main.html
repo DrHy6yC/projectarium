@@ -6,6 +6,7 @@
 
 {% block head %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="{{ base_path }}/static/css/custom.css">
 {% endblock %}
 
 {% block body %}
@@ -13,33 +14,230 @@
 <section id="header">
     <div class="inner">
         <span class="icon solid major fa-cloud"></span>
-        <h1>Привет, меня зовут <strong>Денис</strong>.<br />
-        Это "Планетарий" для моих проектов</h1>
-        <p>
-            <br />
-            Тут вы можете посмотреть на мои пет проекты в одном месте, посмотреть на их работоспособность вживую на реальном сервере
-            <br />
-        </p>
+        <section class="intro">
+          <h1>Привет! Меня зовут Денис.</h1>
+          <p>Добро пожаловать в мой <strong>«Планетарий»</strong> — централизованное пространство для моих проектов.</p>
+          <p>Здесь вы можете ознакомиться с моими pet-проектами, протестировать их работу на реальном сервере и оценить качество реализации.</p>
+          <p>Также вы сможете узнать больше обо мне, моих профессиональных навыках и увлечениях.</p>
+        </section>
         <ul class="actions special">
-            <li><a href="#one" class="button scrolly">Обо мне</a></li>
-            <li><a href="#two" class="button scrolly">К проектам</a></li>
+            <li><a href="#one" class="button scrolly">Мой стек</a></li>
+            <li><a href="#three" class="button scrolly">К проектам</a></li>
+            <li><a href="https://krasnodar.hh.ru/resume/93345c5bff0ed87f370039ed1f304b59446876" class="button scrolly">Резюме</a></li>
         </ul>
     </div>
 </section>
 
 <!-- One -->
-<section id="one" class="main style1">
+<section id="one" class="main style2">
     <div class="container">
-        <h2>Обо мне</h2>
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <style>
+                      .tech-list {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 2rem;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 auto;
+                        max-width: 800px;
+                        justify-content: center;
+                      }
 
-    </div>
+                      .tech-icon {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        color: white;
+                        font-size: 1rem;
+                      }
+
+                      .tech-icon img {
+                        width: 120px;
+                        height: 120px;
+                        object-fit: contain;
+                      }
+                    </style>
+
+                    <ul class="tech-list">
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                        <span>Python</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://fastapi.tiangolo.com/img/icon-white.svg" alt="FastAPI" />
+                        <span>FastAPI</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL" />
+                        <span>SQL</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                        <span>Docker</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" />
+                        <span>Nginx</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                        <span>Git</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+                        <span>Linux</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+                        <span>Redis</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana" />
+                        <span>Grafana</span>
+                      </li>
+                      <li class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="SQLAlchemy" />
+                        <span>SQLAlchemy</span>
+                      </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>Мой стек</h2>
+                    </header>
+                    <ul class="experience-list">
+                      <li>Разработка производительных и масштабируемых backend-приложений на Python/FastAPI.</li>
+                      <li>Уверенное владение фреймворками и библиотеками: FastAPI, Django, SQLAlchemy, Alembic, Pydantic, Asyncio.</li>
+                      <li>Проектирование и реализация RESTful API; генерация OpenAPI-документации и Swagger UI.</li>
+                      <li>Опыт работы с WSGI/ASGI-серверами: Gunicorn, Uvicorn.</li>
+                      <li>
+                        Работа с базами данных через ORM и вручную:
+                        <ul>
+                          <li>Написание SQL-запросов (в т.ч. оконные функции), создание триггеров, функций, хранимых процедур.</li>
+                          <li>PostgreSQL, DB2, MS SQL, MySQL, SQLite.</li>
+                        </ul>
+                      </li>
+                      <li>Docker: создание собственных образов, развёртывание с использованием Docker Compose.</li>
+                      <li>Настройка CI/CD-пайплайнов.</li>
+                      <li>Покрытие кода юнит- и интеграционными тестами с использованием pytest.</li>
+                      <li>Работа с Git: commit, merge, pull request, branching.</li>
+                      <li>Использование линтеров (flake8, ruff) и статических анализаторов типов (mypy, pyright).</li>
+                      <li>Кэширование через Redis, отложенные задачи с Celery.</li>
+                      <li>Работа с Nginx (обратный прокси, SSL/TLS, балансировка нагрузки, редиректы, доступ).</li>
+                      <li>Использование Grafana для отладки и мониторинга.</li>
+                      <li>Опыт развёртывания приложений на серверах под Linux, Windows и macOS.</li>
+                      <li>Написание вспомогательных скриптов на Bash и VBA.</li>
+                      <li>Знание принципов: ООП, SOLID, DRY.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 </section>
 
 <!-- Two -->
 <section id="two" class="main style2">
     <div class="container">
-        <h2>Мои проекты</h2>
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2>Мои софт скилы</h2>
+                    </header>
+                    <ul class="skills-list">
+                      <li>Умение работать в команде, помогать коллегам и делить ответственность.</li>
+                      <li>Наставничество: обучение и поддержка менее опытных разработчиков.</li>
+                      <li>Быстрая адаптация к новым инструментам и процессам.</li>
+                      <li>Навык активного слушания и прояснения требований.</li>
+                      <li>Способность находить решения в условиях неопределённости.</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-12-medium imp-medium centered-column">
+                    <style>
+                        .custom-soft {
+                          display: grid;
+                          grid-template-columns: repeat(2, 1fr); /* ровно 2 колонки */
+                          gap: 2rem;
+                          list-style: none;
+                          padding: 0;
+                          margin: 2rem auto;
+                          max-width: 600px; /* под 2 колонки по 260px + gap */
+                        }
 
+                        .soft-skill-item {
+                          display: flex;
+                          align-items: center; /* центрируем по вертикали */
+                          gap: 1rem;
+                        }
+
+                        .soft-skill-item img {
+                          width: 120px;
+                          height: 120px;
+                          object-fit: contain;
+                          flex-shrink: 0; /* чтобы картинка не сжималась */
+                        }
+
+                        .soft-skill-item span {
+                          color: #333;
+                          font-size: 1.1rem;
+                          line-height: 1.4;
+                          display: flex;
+                          align-items: center;
+                        }
+                    </style>
+                    <ul class="soft-skills-list custom-soft">
+                      <li class="soft-skill-item">
+                        <img src="{{ base_path }}/static/images/TEAMWORK.png" alt="Командная работа">
+                      </li>
+                      <li class="soft-skill-item">
+                        <img src="{{ base_path }}/static/images/MENTORSHIP.png" alt="Наставничество">
+                      </li>
+                      <li class="soft-skill-item">
+                        <img src="{{ base_path }}/static/images/LISTENING.webp" alt="Активное слушание">
+                      </li>
+                      <li class="soft-skill-item">
+                        <img src="{{ base_path }}/static/images/SOLUTIONS.png" alt="Решение задач">
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Three -->
+<section id="three" class="main style4 special">
+    <div class="container">
+        <header class="major">
+            <h2>Мои проекты</h2>
+        </header>
+        <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+        <div class="row gtr-150">
+            <div class="col-4 col-12-medium">
+                <span class="image fit"><img src="{{ base_path }}/static/images/pic02.jpg" alt="" /></span>
+                <h3>Magna feugiat lorem</h3>
+                <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+                <ul class="actions special">
+                    <li><a href="#" class="button">More</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-12-medium">
+                <span class="image fit"><img src="{{ base_path }}/static/images/pic03.jpg" alt="" /></span>
+                <h3>Magna feugiat lorem</h3>
+                <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+                <ul class="actions special">
+                    <li><a href="#" class="button">More</a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-12-medium">
+                <span class="image fit"><img src="{{ base_path }}/static/images/pic04.jpg" alt="" /></span>
+                <h3>Magna feugiat lorem</h3>
+                <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+                <ul class="actions special">
+                    <li><a href="#" class="button">More</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock %}

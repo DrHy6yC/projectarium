@@ -1,0 +1,57 @@
+.tech-list-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.tech-icon-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.tech-icon-stack img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.experience-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.experience-list ul {
+  list-style-type: circle;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
